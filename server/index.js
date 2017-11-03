@@ -14,7 +14,7 @@ app.use(bodyParser.json());//this makes it so we can read JSON from the request 
 app.use(session({
     secret:process.env.SECRET,
     resave:false,
-    saveUninitialized:false
+    saveUninitialized:true
 }))
 
 app.use(checkForSession);
